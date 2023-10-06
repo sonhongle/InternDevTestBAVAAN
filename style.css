@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+  }
+  
+  select {
+    width: 100%;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

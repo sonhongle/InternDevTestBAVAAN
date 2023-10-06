@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h2>Form Đăng Ký</h2>
+    <form id="registration-form">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" value="" required placeholder="Nhập họ và tên"><br><br>
+
+        <label for="phone">Số Điện Thoại:</label>
+        <input type="text" id="phone" name="phone" value="" required placeholder="Nhập số điện thoại "><br><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" value="" required placeholder="Nhập email"><br><br>
+
+        <label for="province">Tỉnh / Thành Phố:</label>
+        <select id="province" name="province" onchange="loadDistricts()">
+            <option value=""></option>
+            <option value="HaNoi">Hà Nội</option>
+            <option value="TP.HCM">TP.HCM</option>
+            <option value="HaNam">Hà Nam</option>
+        </select><br><br>
+
+        <label for="district">Quận / Huyện:</label>
+        <select id="district" name="district">
+
+        </select><br><br>
+
+        <button type="button" onclick="submitForm()">Submit</button>
+
+    </form>
+
+    <h2>Dữ Liệu Đã Submit:</h2>
+    <div id="submitted-data"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
